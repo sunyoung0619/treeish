@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1450">
+    <title>treeish</title>
+    <!--웹폰트-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&family=Noto+Sans+KR:wght@100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!--파비콘-->
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+
+    <!--css-->
+    <link rel="stylesheet" href="./css/community_review.css">
+</head>
+
+<body>
+    <!------------상단광고 부분-------------->
+    <div id="top">
+        <!-- Swiper -->
+        <div class="swiper top_banner">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><a href="#">회원가입 시, 제로웨이스트 첫걸음키트 증정!</a></div>
+                <div class="swiper-slide"><a href="#">멤버십 체험 혜택 확인하러가기</a></div>
+            </div><!--swiper-wrapper-->
+        </div><!--swiper-->
+    </div><!--top-->
+
+
+    <!------------사이드 버튼-------------->
+    <div class="btn">
+        <a href="https://www.kakaocorp.com/page/"><img src='./images/kakao_btn.png'></a>
+        <a href="#" class="top"><img src="./images/top_btn.png" alt="top버튼"></a>
+    </div><!--btn-->
+
+
+    <!----------header 메뉴부분---------->
+    <header>
+        <div id="header_inner">
+            <h1 class="logo">
+                <a href="./index.html"><img src="./images/logo.png" alt="트리시로고"></a>
+            </h1>
+            <ul id="gnb">
+                <li><a href="./brand.html">Brand</a>
+                <li><a href="./shop.html">Shop</a>
+                    <ul class="sub">
+                        <li><a href="./shop.html">편백</a></li>
+                        <li><a href="./shop.html">아로마오일</a></li>
+                        <li><a href="./shop.html">바디케어</a></li>
+                        <li><a href="./shop.html">생활용품</a></li>
+                    </ul>
+                </li>
+                </li>
+                <li><a href="./recycling.html">Recycling</a></li>
+                <li><a href="./community.html">Community</a>
+                    <ul class="sub">
+                        <li><a href="./community.html">Notice</a></li>
+                        <li><a href="./community_event.html">Event</a></li>
+                        <li><a href="./community_review.html">Review</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ol class="icon_login">
+                <li><a href="./login.html"><img src="./images/icon_user.png" alt="로그인아이콘"></a></li>
+                <li><a href="./cart.html"><img src="./images/icon_bag.png" alt="장바구니아이콘"></a></li>
+                <li><a href="#"><img src="./images/icon_search.png" alt="돋보기아이콘"></a></li>
+            </ol>
+        </div><!--header_inner-->
+    </header>
+
+
+
+
+
+    <!---------------메인배너사진--------------->
+    <div id="main_bg">
+        <img src="./images/notice_bg.jpg" alt="노티스 배경">
+    </div>
+
+
+
+
+    <!-------------제목 및 버튼------------->
+    <div id="notice">
+        <h1>Community</h1>
+        <ul>
+            <li><a href="./community.html">NOTICE</a></li>
+            <li><a href="./community_event.html">EVENT</a></li>
+            <li class="on"><a href="./community_review.html">REVIEW</a></li>
+        </ul>
+    </div><!--notice-->
+
+
+
+    <!-------------리뷰 정보창------------->
+    <div id="review">
+        <img src="./images/reviewmain.png" alt="리뷰설명">
+
+
+        <div id="best_photo">
+            <!-- Swiper -->
+            <div class="swiper review_swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="review_ total">
+                            <img src="./images/review_img1.jpg" alt="리뷰사진1">
+
+                            <div class="review_text_box">
+                                <img src="./images/review_small4.jpg" alt="편백오일">
+                                <div class="review_text_small">
+                                    <p><b>Cypress Oil</b></p>
+                                    <p>리뷰 1,504개</p>
+                                </div><!--review_text_box2-->
+                            </div><!--review_text_box-->
+
+                            <div class="line"></div>
+
+                            <div class="review_text_box2">
+                                <ul>
+                                    <li><img src="./images/rivew_star.png" alt="별"></li>
+                                    <li><img src="./images/rivew_star.png" alt="별"></li>
+                                    <li><img src="./images/rivew_star.png" alt="별"></li>
+                                    <li><img src="./images/rivew_star.png" alt="별"></li>
+                                    <li><img src="./images/rivew_star.png" alt="별"></li>
+                                </ul>
+                                <p>디퓨저에 편백오일을 한두방울 넣어서 사용하니 집이 숲이
+                                    된것같아요! 피톤치드라 공기도 정화되면서 요즘 머리아픈...</p>
+                                <p>박**</p>
+                            </div><!--review_text_box2-->
+                        </div><!--review_total-->
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="review_total">
+                            <img src="./images/review_img5.jpg" alt="리뷰사진1">
+
+                            <div class="review_text_box">
+                                <img src="./images/review_small5.jpg" alt="해당상품이미지">
+                                <div class="review_text_small">
+                                    <p><b>Cypress Water</b></p>
+                                    <p>리뷰 1,832개</p>
+                                </div><!--review_text_box2-->
+                            </div><!--review_text_box-->
+
+                            <div class="line"></div>
+
+                            <div class="review_text_box2">
+                                <ul>
+                                    <li><img src="./images/rivew_star.png" alt="별"></li>
+                                    <li><img src="./images/rivew_star.png" alt="별"></li>
+                                    <li><img src="./images/rivew_star.png" alt="별"></li>
+                                    <li><img src="./images/rivew_star.png" alt="별"></li>
+                                    <li><img src="./images/rivew_star.png" alt="별"></li>
+                                </ul>
+                                <p>침대 신발장 쓰레기통 화장실 벽틈새... 집안 쿰쿰한 냄새 없애려고 구매했는데 대만족입니다
+                                    상쾌한 히노키 향도 좋은데...</p>
+                                <p>yyo**</p>
+                            </div><!--review_text_box2-->
+                        </div><!--review_total-->
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="review_total">
+                            <img src="./images/review_img3.jpg" alt="리뷰사진1">
+
+                            <div class="review_text_box">
+                                <img src="./images/review_small2.jpg" alt="편백비누">
+                                <div class="review_text_small">
+                                    <p><b>Cypress Soap</b></p>
+                                    <p>리뷰 987개</p>
+                                </div><!--review_text_box2-->
+                            </div><!--review_text_box-->
+
+                            <div class="line"></div>
+
+                            <div class="review_text_box2">
+                                <ul>
+                                    <li><img src="./images/rivew_star.png" alt="별"></li>
+                                    <li><img src="./images/rivew_star.png" alt="별"></li>
+                                    <li><img src="./images/rivew_star.png" alt="별"></li>
+                                    <li><img src="./images/rivew_star.png" alt="별"></li>
+                                    <li><img src="./images/rivew_star.png" alt="별"></li>
+                                </ul>
+                                <p>강아지알러지로 편백비누 주문하였어요 저 또한 건조해서 요즘 세안 요걸로 해요 새수 후 바로 건조하지 않아 좋고 강아...</p>
+                                <p>박**</p>
+                            </div><!--review_text_box2-->
+                        </div><!--review_total-->
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="review_total">
+                            <img src="./images/review_img6.jpg" alt="리뷰사진1">
+
+                            <div class="review_text_box">
+                                <img src="./images/review_small3.jpg" alt="베티버오일">
+                                <div class="review_text_small">
+                                    <p><b>Vetiver Oil</b></p>
+                                    <p>리뷰 1,004개</p>
+                                </div><!--review_text_box2-->
+                            </div><!--review_text_box-->
+
+                            <div class="line"></div>
+
+                            <div class="review_text_box2">
+                                <ul>
+                                    <li><img src="./images/rivew_star.png" alt="별"></li>
+                                    <li><img src="./images/rivew_star.png" alt="별"></li>
+                                    <li><img src="./images/rivew_star.png" alt="별"></li>
+                                    <li><img src="./images/rivew_star.png" alt="별"></li>
+                                    <li><img src="./images/rivew_star.png" alt="별"></li>
+                                </ul>
+                                <p>뭔가 자연적인 향 건강한 향이에요! 아이 장난감이며 소독제가 필요했는데 잘 쓰고 있어요~ 비누도 사고싶어요...</p>
+                                <p>ubo**</p>
+                            </div><!--review_text_box2-->
+                        </div><!--review_total-->
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="review_total">
+                            <img src="./images/review_img4.jpg" alt="리뷰사진1">
+
+                            <div class="review_text_box">
+                                <img src="./images/review_small5.jpg" alt="해당상품이미지">
+                                <div class="review_text_small">
+                                    <p><b>Cypress Water</b></p>
+                                    <p>리뷰 1,832개</p>
+                                </div><!--review_text_box2-->
+                            </div><!--review_text_box-->
+
+                            <div class="line"></div>
+
+                            <div class="review_text_box2">
+                                <ul>
+                                    <li><img src="./images/rivew_star.png" alt="별"></li>
+                                    <li><img src="./images/rivew_star.png" alt="별"></li>
+                                    <li><img src="./images/rivew_star.png" alt="별"></li>
+                                    <li><img src="./images/rivew_star.png" alt="별"></li>
+                                    <li><img src="./images/rivew_star.png" alt="별"></li>
+                                </ul>
+                                <p>새로산 이불 안빨고 그냥 덮고 잤더니 너무 간지러워서 반신반의 하면서 구매했어요! 냄새도 숲냄새 나고 정말 간지러...</p>
+                                <p>soo**</p>
+                            </div><!--review_text_box2-->
+                        </div><!--review_total-->
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="review_total">
+                            <img src="./images/review_img2.jpg" alt="리뷰사진1">
+
+                            <div class="review_text_box">
+                                <img src="./images/review_small5.jpg" alt="해당상품이미지">
+                                <div class="review_text_small">
+                                    <p><b>Cypress Water</b></p>
+                                    <p>리뷰 1,832개</p>
+                                </div><!--review_text_box2-->
+                            </div><!--review_text_box-->
+
+                            <div class="line"></div>
+
+                            <div class="review_text_box2">
+                                <ul>
+                                    <li><img src="./images/rivew_star.png" alt="별"></li>
+                                    <li><img src="./images/rivew_star.png" alt="별"></li>
+                                    <li><img src="./images/rivew_star.png" alt="별"></li>
+                                    <li><img src="./images/rivew_star.png" alt="별"></li>
+                                    <li><img src="./images/rivew_star.png" alt="별"></li>
+                                </ul>
+                                <p>진짜 최고예요! 이불이 가끔 간지러워서 뿌렸는데 탈취도 되고 간지러운 느낌이 싹 사라져요! 신기방기 합니다!</p>
+                                <p>soo**</p>
+                            </div><!--review_text_box2-->
+                        </div><!--review_total-->
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="review_total">
+                            <img src="./images/review_img8.jpg" alt="리뷰사진1">
+
+                            <div class="review_text_box">
+                                <img src="./images/review_small4.jpg" alt="편백오일">
+                                <div class="review_text_small">
+                                    <p><b>Cypress Oil</b></p>
+                                    <p>리뷰 1,504개</p>
+                                </div><!--review_text_box2-->
+                            </div><!--review_text_box-->
+
+                            <div class="line"></div>
+
+                            <div class="review_text_box2">
+                                <ul>
+                                    <li><img src="./images/rivew_star.png" alt="별"></li>
+                                    <li><img src="./images/rivew_star.png" alt="별"></li>
+                                    <li><img src="./images/rivew_star.png" alt="별"></li>
+                                    <li><img src="./images/rivew_star.png" alt="별"></li>
+                                    <li><img src="./images/rivew_star.png" alt="별"></li>
+                                </ul>
+                                <p>향기가 자연스럽고 참 좋아요. 방안이 숲속이 된것처럼 상쾌해졌어요. 긴장완화용으로 허브오일을 많이 썼는데 이걸로 갈...</p>
+                                <p>soo**</p>
+                            </div><!--review_text_box2-->
+                        </div><!--review_total-->
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="review_total">
+                            <img src="./images/review_img9.jpg" alt="리뷰사진1">
+
+                            <div class="review_text_box">
+                                <img src="./images/review_small4.jpg" alt="편백오일">
+                                <div class="review_text_small">
+                                    <p><b>Cypress Oil</b></p>
+                                    <p>리뷰 1,504개</p>
+                                </div><!--review_text_box2-->
+                            </div><!--review_text_box-->
+
+                            <div class="line"></div>
+
+                            <div class="review_text_box2">
+                                <ul>
+                                    <li><img src="./images/rivew_star.png" alt="별"></li>
+                                    <li><img src="./images/rivew_star.png" alt="별"></li>
+                                    <li><img src="./images/rivew_star.png" alt="별"></li>
+                                    <li><img src="./images/rivew_star.png" alt="별"></li>
+                                    <li><img src="./images/rivew_star.png" alt="별"></li>
+                                </ul>
+                                <p>네군데 사용해봤는데 이 곳 편백나무 오일이 가장 자연스럽고 향기로운 것 같아요.
+                                    여러번 구매해서 사용하고 있습니다. 좋...</p>
+                                <p>soo**</p>
+                            </div><!--review_text_box2-->
+                        </div><!--review_total-->
+                    </div>
+                </div>
+                <div class="swiper-pagination review_pag"></div>
+                <div class="swiper-button-next review_out_next"></div>
+                <div class="swiper-button-prev review_out_prev"></div>
+            </div>
+
+        </div><!--best_photo-->
+
+
+        <div id="basic_review">
+            <div class="basic_review_inner">
+                <p>상품평수 5,934 개</p>
+                <div>
+                    <input type="text" placeholder="">
+                    <select name="list2" id="list2">
+                        <option value="1">최신순</option>
+                        <option value="2">추천순</option>
+                        <option value="3">별점순</option>
+                    </select>
+                </div>
+            </div>
+
+            <table>
+                <tr>
+                    <td>
+                        <img src="./images/review2_1.jpg" alt="예시">
+                        <div class="table_text">
+                            <div class="table_text_inner">
+                                <p>Olive Soap</p>
+                                <ul>
+                                    <li><img src="./images/basic_reivew_star.png" alt="리뷰별"></li>
+                                    <li><img src="./images/basic_reivew_star.png" alt="리뷰별"></li>
+                                    <li><img src="./images/basic_reivew_star.png" alt="리뷰별"></li>
+                                    <li><img src="./images/basic_reivew_star.png" alt="리뷰별"></li>
+                                    <li><img src="./images/basic_reivew_star.png" alt="리뷰별"></li>
+                                </ul>
+                            </div><!--table_text_inner-->
+                            <p>건조한 피부라 바디클렌져사용하면 가려워서 이번에 바디바를 쓰게되었는데 역시 트리시 제품으로 전부 갈아타야 할듯합니다 자극없이 기분까지 업되는것
+                                같아요
+                            </p>
+                            <p>김** 님</p>
+
+                            <div class="reivew_img">
+                                <img src="./images/rivew_talk.png" alt="댓글">
+                                <p><a href="#">0</a></p>
+                                <img src="./images/rivew_siren.png" alt="댓글">
+                                <p><a href="#">신고·차단</a></p>
+                            </div><!--review_img-->
+                        </div><!--table_text-->
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <img src="./images/review2_4.jpg" alt="예시">
+                        <div class="table_text">
+                            <div class="table_text_inner">
+                                <p>Ylang Ylang Oil</p>
+                                <ul>
+                                    <li><img src="./images/basic_reivew_star.png" alt="리뷰별"></li>
+                                    <li><img src="./images/basic_reivew_star.png" alt="리뷰별"></li>
+                                    <li><img src="./images/basic_reivew_star.png" alt="리뷰별"></li>
+                                    <li><img src="./images/basic_reivew_star.png" alt="리뷰별"></li>
+                                    <li><img src="./images/basic_reivew_star.png" alt="리뷰별"></li>
+                                </ul>
+                            </div><!--table_text_inner-->
+                            <p>향도 좋고 너무 건조하지 않고 좋은 것 같아요!!
+                            </p>
+                            <p>h******* 님</p>
+
+                            <div class="reivew_img">
+                                <img src="./images/rivew_talk.png" alt="댓글">
+                                <p><a href="#">0</a></p>
+                                <img src="./images/rivew_siren.png" alt="댓글">
+                                <p><a href="#">신고·차단</a></p>
+                            </div><!--review_img-->
+                        </div><!--table_text-->
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <img src="./images/review2_3.jpg" alt="예시">
+                        <div class="table_text">
+                            <div class="table_text_inner">
+                                <p>대나무 칫솔</p>
+                                <ul>
+                                    <li><img src="./images/basic_reivew_star.png" alt="리뷰별"></li>
+                                    <li><img src="./images/basic_reivew_star.png" alt="리뷰별"></li>
+                                    <li><img src="./images/basic_reivew_star.png" alt="리뷰별"></li>
+                                    <li><img src="./images/basic_reivew_star.png" alt="리뷰별"></li>
+                                    <li><img src="./images/basic_reivew_star.png" alt="리뷰별"></li>
+                                </ul>
+                            </div><!--table_text_inner-->
+                            <p>가족이 함께 쓰기도 좋고 친환경 제품이라 좋아요!
+                            </p>
+                            <p>양** 님</p>
+
+                            <div class="reivew_img">
+                                <img src="./images/rivew_talk.png" alt="댓글">
+                                <p><a href="#">0</a></p>
+                                <img src="./images/rivew_siren.png" alt="댓글">
+                                <p><a href="#">신고·차단</a></p>
+                            </div><!--review_img-->
+                        </div><!--table_text-->
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <img src="./images/review2_6.jpg" alt="예시">
+                        <div class="table_text">
+                            <div class="table_text_inner">
+                                <p>Lavender Soap</p>
+                                <ul>
+                                    <li><img src="./images/basic_reivew_star.png" alt="리뷰별"></li>
+                                    <li><img src="./images/basic_reivew_star.png" alt="리뷰별"></li>
+                                    <li><img src="./images/basic_reivew_star.png" alt="리뷰별"></li>
+                                    <li><img src="./images/basic_reivew_star.png" alt="리뷰별"></li>
+                                    <li><img src="./images/basic_reivew_star.png" alt="리뷰별"></li>
+                                </ul>
+                            </div><!--table_text_inner-->
+                            <p>패키지가 너무 예뻐요. 향도 상큼하고 비누 특유의 건조함이 없어서 좋습니다.
+                            </p>
+                            <p>q********* 님</p>
+
+                            <div class="reivew_img">
+                                <img src="./images/rivew_talk.png" alt="댓글">
+                                <p><a href="#">0</a></p>
+                                <img src="./images/rivew_siren.png" alt="댓글">
+                                <p><a href="#">신고·차단</a></p>
+                            </div><!--review_img-->
+                        </div><!--table_text-->
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="last">
+                        <img src="./images/review2_5.jpg" alt="예시">
+                        <div class="table_text">
+                            <div class="table_text_inner">
+                                <p>비치우드 클렌징브러쉬</p>
+                                <ul>
+                                    <li><img src="./images/basic_reivew_star.png" alt="리뷰별"></li>
+                                    <li><img src="./images/basic_reivew_star.png" alt="리뷰별"></li>
+                                    <li><img src="./images/basic_reivew_star.png" alt="리뷰별"></li>
+                                    <li><img src="./images/basic_reivew_star.png" alt="리뷰별"></li>
+                                    <li><img src="./images/basic_reivew_star.png" alt="리뷰별"></li>
+                                </ul>
+                            </div><!--table_text_inner-->
+                            <p>써보고 좋아서 친구 선물해줬습니다 :)
+                            </p>
+                            <p>차** 님</p>
+
+                            <div class="reivew_img">
+                                <img src="./images/rivew_talk.png" alt="댓글">
+                                <p><a href="#">0</a></p>
+                                <img src="./images/rivew_siren.png" alt="댓글">
+                                <p><a href="#">신고·차단</a></p>
+                            </div><!--review_img-->
+                        </div><!--table_text-->
+                    </td>
+                </tr>
+            </table>
+            <div class="review_btn">
+                <p><a href="#">리뷰 작성하기</a></p>
+            </div><!--review_btn-->
+        </div>
+
+        <div id="page_btn">
+            <p><a href="#">
+                    < </a>
+            </p>
+            <p><a href="#">1</a></p>
+            <p><a href="#">2</a></p>
+            <p><a href="#">3</a></p>
+            <p><a href="#">4</a></p>
+            <p><a href="#">5</a></p>
+
+            <p><a href="#">
+                    > </a></p>
+        </div><!--page_btn-->
+    </div><!--review-->
+
+
+
+    <!----------------푸터------------------>
+    <footer>
+        <div id="footer_line">
+            <div id="footer_inner">
+                <ul>
+                    <li><a href="./brand.html">회사소개</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">개인정보취급방침</a></li>
+                    <li><a href="#">고객센터</a></li>
+                </ul>
+                <ol>
+                    <li><a href="https://www.kakaocorp.com/page/"><img src="./images/footer_sns1.png" alt="카카오"></a>
+                    </li>
+                    <li><a href="https://www.instagram.com/"><img src="./images/footer_sns2.png" alt="인스타"></a></li>
+                    <li><a href="https://www.youtube.com/"><img src="./images/footer_sns3.png" alt="유튜브"></a></li>
+                    <li><a href="https://www.facebook.com/"><img src="./images/footer_sns4.png" alt="페이스북"></a></li>
+                </ol>
+            </div><!--footer_inner-->
+        </div>
+
+        <div id="footer_inner2">
+            <a href="./index.html"><img src="./images/footer_logo.png" alt="트리시 로고"></a>
+            <p>(주)트리시 대표자 : 박선영 사업자등록번호 : 0123-45-67890<br>
+                주소 : 부산광역시 중구 중앙대로 26 10층 (트리시) 고객센터 : 1234 - 1234</p>
+            <ul>
+                <li><img src="./images/footer_eco1.png" alt="소이잉크마크" class="soy"></li>
+                <li><img src="./images/footer_eco2.png" alt="비건마크"></li>
+            </ul>
+        </div><!--footer_inner2-->
+    </footer>
+
+
+
+
+    <!-- Swiper JS -->
+    <script src="./js/jquery-3.6.4.min.js"></script>
+    <script src="./js/sub_menu.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/main_script.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="./js/script_top_bt.js"></script>
+
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".top_banner", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            direction: "vertical",
+        });
+    </script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".review_swiper", {
+            slidesPerView: 4,
+            spaceBetween: 30,
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+        });
+    </script>
+
+</body>
+
+</html>

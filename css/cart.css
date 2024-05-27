@@ -1,0 +1,413 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+img,
+video,
+iframe {
+    vertical-align: middle;
+
+}
+
+/*웹폰트
+ - 영문
+  .el-messiri
+  font-family: "El Messiri", sans-serif;
+  
+  -한글
+  .noto-sans
+  font-family: "Noto Sans KR", sans-serif;
+  */
+
+
+body {
+    min-width: 1450px;
+    font-family: "Noto Sans KR", sans-serif;
+    line-height: 24px;
+    font-size: 16px;
+    color: #000;
+    background: url(../images/bg.jpg);
+}
+
+
+
+/*----------top_banner--------------*/
+.top_banner {
+    height: 30px;
+    background-color: #4a4f22;
+    text-align: center;
+    color: #ede7d5;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+
+/*-----------side_btn--------------*/
+.btn {
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    width: 50px;
+    z-index: 100;
+}
+
+.btn img {
+    padding-bottom: 5px;
+}
+
+.top {
+    display: none;
+}
+
+
+
+/*----------header--------------*/
+header {
+    background-color: rgba(238, 232, 214, 0.5);
+    height: 70px;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    margin: 0 auto;
+    border-bottom: 0.3px solid rgba(74, 79, 34, 0.5);
+    z-index: 99;
+    width: 100%;
+}
+
+header.on {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#header_inner {
+    width: 1450px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#gnb {
+    display: flex;
+}
+
+#gnb>li {
+    font-family: "El Messiri", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 25px 40px;
+    color: #3a3a37;
+    position: relative;
+}
+
+
+.sub {
+    position: absolute;
+    top: 95%;
+    left: 0;
+    width: 100%;
+    display: none;
+}
+
+#gnb>li:nth-child(2)>.sub li {
+    background-color: rgba(238, 232, 214, 0.5);
+    color: #3a3a37;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.sub li {
+    background-color: rgba(238, 232, 214, 0.5);
+    color: #3a3a37;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 13px 0;
+    text-align: center;
+}
+
+.logo img {
+    width: 100px;
+}
+
+.icon_login {
+    display: flex;
+}
+
+.icon_login li {
+    padding: 0px 5px;
+}
+
+.icon_login img {
+    width: 25px;
+}
+
+
+
+
+/*-------------제목--------------*/
+#cart {
+    width: 1450px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 170px;
+}
+
+#cart h1 {
+    font-family: "El Messiri", sans-serif;
+}
+
+
+
+/*-----------배송상품------------*/
+#container {
+    width: 1450px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 60px;
+    font-size: 17px;
+}
+
+#container ul {
+    display: flex;
+    color: #9e9e9e;
+}
+
+#container ul li:nth-child(2) {
+    padding: 0 20px;
+}
+
+.active span {
+    font-weight: 600;
+    font-size: 17px;
+    color: #4a4f22;
+}
+
+#container ul li:hover {
+    color: #4a4f22;
+    font-weight: 600;
+    transition: all 0.5s;
+}
+
+
+#cart_inner {
+    width: 1450px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.line1 {
+    width: 1450px;
+    margin: 0px auto;
+    border-bottom: 4px solid #727d47;
+    padding-top: 10px;
+
+}
+
+.tab_content {
+    width: 1450px;
+    margin: 0 auto;
+}
+
+.cart_inner p {
+    text-align: center;
+    padding: 150px 0;
+}
+
+.line2 {
+    width: 1450px;
+    margin: 0px auto;
+    border-bottom: 0.5px solid #727d47;
+}
+
+
+/*--------------상품버튼---------------*/
+#btn {
+    width: 1450px;
+    margin: 0 auto;
+}
+
+#btn ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 0;
+}
+
+#btn ul li a {
+    padding: 15px 40px;
+    border: 1px solid #b5c66e;
+}
+
+#btn ul li:nth-child(1) a {
+    background-color: #727d47;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 50px;
+    margin-right: 5px;
+}
+
+
+#btn ul li:nth-child(2) a {
+    font-weight: 500;
+    margin-right: 50px;
+    color: #727d47;
+}
+
+#btn ul li:nth-child(2) a:hover {
+    border: 1px solid #4a4f22;
+    font-weight: 500;
+    margin-right: 50px;
+    color: #4a4f22;
+    transition: all 0.1s;
+}
+
+
+#btn ul li:nth-child(3) a {
+    position: absolute;
+    top: 28%;
+    right: -3%;
+    font-weight: 500;
+    margin-right: 50px;
+    color: #727d47;
+}
+
+#btn ul li:nth-child(3) a:hover {
+    position: absolute;
+    top: 28%;
+    right: -3%;
+    border: 1px solid #4a4f22;
+    font-weight: 500;
+    margin-right: 50px;
+    color: #4a4f22;
+    transition: all 0.1s;
+}
+
+
+
+/*--------------이용안내---------------*/
+#Information {
+    width: 1450px;
+    margin: 0 auto;
+    padding: 70px 0
+}
+
+.infor {
+    padding: 5px;
+    padding-bottom: 10px;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+#Information p:nth-child(3) {
+    padding-top: 15px;
+    padding-left: 5px;
+    font-weight: 500;
+}
+
+#Information p:nth-child(4) {
+    padding-left: 10px;
+    padding-top: 5px;
+    font-weight: 300;
+}
+
+#Information p:nth-child(5) {
+    padding-top: 15px;
+    padding-left: 5px;
+    font-weight: 500;
+}
+
+#Information p:nth-child(6) {
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 50px;
+    font-weight: 300;
+}
+
+
+
+/*--------------footer---------------*/
+footer {
+    background-color: #4a4f22;
+}
+
+#footer_line {
+    border-bottom: 0.3px solid rgba(236, 231, 213, 0.5);
+    padding-bottom: 20px;
+}
+
+#footer_inner {
+    width: 1450px;
+    margin: 0 auto;
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#footer_inner ul,
+ol {
+    display: flex;
+}
+
+#footer_inner ul li {
+    color: #ece7d5;
+    padding: 0 20px;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+#footer_inner ol li {
+    padding-right: 5px;
+}
+
+#footer_inner2 {
+    position: relative;
+    width: 1450px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+}
+
+#footer_inner2 ul {
+    display: flex;
+}
+
+#footer_inner2>img {
+    padding: 0 20px;
+}
+
+#footer_inner2>p {
+    position: absolute;
+    top: 35%;
+    left: 210px;
+    color: #ece7d5;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+#footer_inner2 .soy {
+    position: absolute;
+    top: 37%;
+    right: 75px;
+}

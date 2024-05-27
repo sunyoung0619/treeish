@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1450">
+    <title>treeish</title>
+    <!--웹폰트-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&family=Noto+Sans+KR:wght@100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!--파비콘-->
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+
+    <!--css-->
+    <link rel="stylesheet" href="./css/cart.css">
+</head>
+
+<body>
+    <!------------상단광고 부분-------------->
+    <div id="top">
+        <!-- Swiper -->
+        <div class="swiper top_banner">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><a href="#">회원가입 시, 제로웨이스트 첫걸음키트 증정!</a></div>
+                <div class="swiper-slide"><a href="#">멤버십 체험 혜택 확인하러가기</a></div>
+            </div><!--swiper-wrapper-->
+        </div><!--swiper-->
+    </div><!--top-->
+
+
+
+    <!------------사이드 버튼-------------->
+    <div class="btn">
+        <a href="https://www.kakaocorp.com/page/"><img src='./images/kakao_btn.png'></a>
+        <a href="#" class="top"><img src="./images/top_btn.png" alt="top버튼"></a>
+    </div><!--btn-->
+
+
+
+
+    <!----------header 메뉴부분---------->
+    <header>
+        <div id="header_inner">
+            <h1 class="logo">
+                <a href="./index.html"><img src="./images/logo.png" alt="트리시로고"></a>
+            </h1>
+            <ul id="gnb">
+                <li><a href="./brand.html">Brand</a>
+                <li><a href="./shop.html">Shop</a>
+                    <ul class="sub">
+                        <li><a href="./shop.html">편백</a></li>
+                        <li><a href="./shop.html">아로마오일</a></li>
+                        <li><a href="./shop.html">바디케어</a></li>
+                        <li><a href="./shop.html">생활용품</a></li>
+                    </ul>
+                </li>
+                </li>
+                <li><a href="./recycling.html">Recycling</a></li>
+                <li><a href="./community.html">Community</a>
+                    <ul class="sub">
+                        <li><a href="./community.html">Notice</a></li>
+                        <li><a href="./community_event.html">Event</a></li>
+                        <li><a href="./community_review.html">Review</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ol class="icon_login">
+                <li><a href="./login.html"><img src="./images/icon_user.png" alt="로그인아이콘"></a></li>
+                <li><a href="./cart.html"><img src="./images/icon_bag.png" alt="장바구니아이콘"></a></li>
+                <li><a href="#"><img src="./images/icon_search.png" alt="돋보기아이콘"></a></li>
+            </ol>
+        </div><!--header_inner-->
+    </header>
+
+
+
+
+
+    <!-----------제목------------->
+    <div id="cart">
+        <h1>CART</h1>
+    </div><!--cart-->
+
+
+
+
+    <!--------------배송상품-------------->
+    <div id="container">
+        <ul class="tabs">
+            <li><span data="#tab1">국내배송상품(0) </span></li>
+            <li>/</li>
+            <li><span data="#tab2">해외배송상품(0)</span></li>
+        </ul>
+        <p>장바구니에 담긴 상품은 30일동안 보관됩니다. </p>
+    </div><!--container-->
+
+    <p class="line1"></p>
+    <div class="tab_container">
+        <div id="tab1" class="tab_content">
+            <div class="cart_inner">
+                <p>장바구니가 비어 있습니다.</p>
+            </div><!--cart_inner-->
+        </div><!--tab_content-->
+
+        <div id="tab2" class="tab_content">
+            <div class="cart_inner">
+                <p>장바구니가 비어 있습니다.</p>
+            </div><!--cart_inner-->
+        </div>
+    </div><!--tab_container-->
+    <p class="line2"></p>
+
+
+
+
+    <!--------------상품버튼-------------->
+    <div id="btn">
+        <ul>
+            <li><a href="#">전체상품주문</a></li>
+            <li><a href="#">선택상품주문</a></li>
+            <li><a href="#">쇼핑계속하기</a></li>
+        </ul>
+    </div><!--btn-->
+
+
+
+    <!--------------이용안내-------------->
+    <div id="Information">
+        <p class="infor">이용안내</p>
+        <div class="line2">
+            <p></p>
+        </div>
+        <p>장바구니 이용안내</p>
+        <p>1. 해외배송 상품과 국내배송 상품은 함께 결제하실 수 없으니 장바구니 별로 따로 결제해 주시기 바랍니다.<br>
+            2. 해외배송 가능 상품의 경우 국내배송 장바구니에 담았다가 해외배송 장바구니로 이동하여 결제하실 수 있습니다.<br>
+            3. 선택하신 상품의 수량을 변경하시려면 수량변경 후 [변경] 버튼을 누르시면 됩니다.<br>
+            4. [쇼핑계속하기] 버튼을 누르시면 쇼핑을 계속 하실 수 있습니다. <br>
+            5. 장바구니와 관심상품을 이용하여 원하시는 상품만 주문하거나 관심상품으로 등록하실 수 있습니다.<br>
+            6. 파일 첨부 옵션은 동일상품을장바구니에 추가할 경우 마지막에 업로드 한 파일로 교체됩니다.</p>
+
+        <p>무이자할부 이용안내</p>
+        <p>1. 상품별 무이자할부 혜택을 받으시려면 무이자할부 상품만 선택하여 [주문하기] 버튼을 눌러 주문/결제 하시면 됩니다.<br>
+            2. [전체 상품 주문] 버튼을 누르시면 장바구니의 구분없이 선택된 모든 상품에 대한 주문/결제가 이루어집니다.<br>
+            3. 단, 전체 상품을 주문/결제하실 경우, 상품별 무이자할부 혜택을 받으실 수 없습니다.<br>
+            4. 무이자할부 상품은 장바구니에서 별도 무이자할부 상품 영역에 표시되어, 무이자할부 상품 기준으로 배송비가 표시됩니다.<br>
+            &nbsp; &nbsp;실제 배송비는 함께 주문하는 상품에 따라 적용되오니 주문서 하단의 배송비 정보를 참고해주시기 바랍니다.</p>
+    </div><!--Information-->
+
+
+
+    <!----------------푸터------------------>
+    <footer>
+        <div id="footer_line">
+            <div id="footer_inner">
+                <ul>
+                    <li><a href="./brand.html">회사소개</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">개인정보취급방침</a></li>
+                    <li><a href="#">고객센터</a></li>
+                </ul>
+                <ol>
+                    <li><a href="https://www.kakaocorp.com/page/"><img src="./images/footer_sns1.png" alt="카카오"></a>
+                    </li>
+                    <li><a href="https://www.instagram.com/"><img src="./images/footer_sns2.png" alt="인스타"></a>
+                    </li>
+                    <li><a href="https://www.youtube.com/"><img src="./images/footer_sns3.png" alt="유튜브"></a>
+                    </li>
+                    <li><a href="https://www.facebook.com/"><img src="./images/footer_sns4.png" alt="페이스북"></a>
+                    </li>
+                </ol>
+            </div><!--footer_inner-->
+        </div>
+
+        <div id="footer_inner2">
+            <a href="./index.html"><img src="./images/footer_logo.png" alt="트리시 로고"></a>
+            <p>(주)트리시 대표자 : 박선영 사업자등록번호 : 0123-45-67890<br>
+                주소 : 부산광역시 중구 중앙대로 26 10층 (트리시) 고객센터 : 1234 - 1234</p>
+            <ul>
+                <li><img src="./images/footer_eco1.png" alt="소이잉크마크" class="soy"></li>
+                <li><img src="./images/footer_eco2.png" alt="비건마크"></li>
+            </ul>
+        </div><!--footer_inner2-->
+    </footer>
+
+
+
+
+    <!-- Swiper JS -->
+    <script src="./js/jquery-3.6.4.min.js"></script>
+    <script src="./js/sub_menu.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/main_script.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="./js/script_top_bt.js"></script>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="./js/tab.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".top_banner", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            direction: "vertical",
+        });
+    </script>
+</body>
+
+</html>

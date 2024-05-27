@@ -1,0 +1,399 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+img,
+video,
+iframe {
+    vertical-align: middle;
+
+}
+
+/*웹폰트
+ - 영문
+  .el-messiri
+  font-family: "El Messiri", sans-serif;
+  
+  -한글
+  .noto-sans
+  font-family: "Noto Sans KR", sans-serif;
+  */
+
+
+body {
+    min-width: 1450px;
+    font-family: "Noto Sans KR", sans-serif;
+    line-height: 24px;
+    font-size: 16px;
+    color: #000;
+    background: url(../images/bg.jpg);
+}
+
+
+
+/*----------top_banner--------------*/
+.top_banner {
+    height: 30px;
+    background-color: #4a4f22;
+    text-align: center;
+    color: #ede7d5;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+
+/*-----------side_btn--------------*/
+.btn {
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    width: 50px;
+    z-index: 100;
+}
+
+.btn img {
+    padding-bottom: 5px;
+}
+
+.top {
+    display: none;
+}
+
+
+
+/*----------header--------------*/
+header {
+    background-color: rgba(238, 232, 214, 0.5);
+    height: 70px;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    margin: 0 auto;
+    border-bottom: 0.3px solid rgba(74, 79, 34, 0.5);
+    z-index: 99;
+    width: 100%;
+}
+
+header.on {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#header_inner {
+    width: 1450px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#gnb {
+    display: flex;
+}
+
+#gnb>li {
+    font-family: "El Messiri", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 25px 40px;
+    color: #3a3a37;
+    position: relative;
+}
+
+
+.sub {
+    position: absolute;
+    top: 95%;
+    left: 0;
+    width: 100%;
+    display: none;
+}
+
+#gnb>li:nth-child(2)>.sub li {
+    background-color: rgba(238, 232, 214, 0.5);
+    color: #3a3a37;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.sub li {
+    background-color: rgba(238, 232, 214, 0.5);
+    color: #3a3a37;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 13px 0;
+    text-align: center;
+}
+
+.logo img {
+    width: 100px;
+}
+
+.icon_login {
+    display: flex;
+}
+
+.icon_login li {
+    padding: 0px 5px;
+}
+
+.icon_login img {
+    width: 25px;
+}
+
+
+
+
+/*-------------제목--------------*/
+#login {
+    width: 1450px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 170px;
+}
+
+#login h1 {
+    font-family: "El Messiri", sans-serif;
+}
+
+
+
+/*----------로그인창------------*/
+
+.line1 {
+    width: 1450px;
+    margin: 0px auto;
+    border-bottom: 4px solid #727d47;
+    padding-top: 70px;
+
+}
+
+.login-wrapper {
+    width: 1450px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    padding: 60px 0 40px 70px;
+}
+
+.login-wrapper p {
+    font-size: 20px;
+    font-weight: 500;
+    padding-left: 33%;
+    padding-bottom: 30px;
+}
+
+#login-form {
+    width: 500px;
+}
+
+.login_inner {
+    display: flex;
+}
+
+.login_inner2>input {
+    width: 300px;
+    height: 40px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+    display: flex;
+}
+
+#login-form>input::placeholder {
+    color: #b5b5b5;
+}
+
+.login_inner>input[type="submit"] {
+    color: #fff;
+    font-size: 16px;
+    background-color: #727d47;
+    border: 1px solid #727d47;
+    margin-left: 5px;
+    height: 85px;
+    width: 120px;
+    font-weight: 600;
+}
+
+.login_inner>input[type="submit"]:hover {
+    border: 1px solid #727d47;
+    background-color: inherit;
+    color: #727d47;
+    transition: all 0.5s;
+}
+
+#login-form>label {
+    color: #727d47;
+}
+
+.checkbox_inner {
+    position: relative;
+    padding-top: 5px;
+}
+
+.checkbox_inner p a {
+    position: absolute;
+    top: 9%;
+    right: 5%;
+    padding-right: 50px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+
+.line2 {
+    width: 1450px;
+    margin: 0px auto;
+    border-bottom: 0.5px solid #727d47;
+}
+
+
+
+/*--------------멤버십혜택---------------*/
+#member {
+    width: 1450px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 70px;
+}
+
+#member h1 {
+    font-family: "El Messiri", sans-serif;
+}
+
+#member p {
+    font-weight: 500;
+    font-size: 17px;
+    padding-top: 20px;
+}
+
+#member ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
+
+#member ul li {
+    padding-top: 30px;
+    padding-right: 150px;
+}
+
+#member ul li:nth-child(4) {
+    padding-right: 0px;
+}
+
+#member ul li p:nth-child(2) {
+    font-weight: 600;
+    padding-top: 30px;
+}
+
+#member ul li p:nth-child(3) {
+    font-weight: 400;
+    padding-top: 10px;
+}
+
+#member p:nth-child(4) a {
+    box-sizing: border-box;
+    padding: 10px 120px;
+    background-color: #727d47;
+    border: 1px solid #727d47;
+    color: #fff;
+}
+
+#member p:nth-child(4) a:hover {
+    box-sizing: border-box;
+    padding: 10px 120px;
+    background-color: inherit;
+    border: 1px solid #727d47;
+    color: #727d47;
+    transition: all 0.5s;
+}
+
+/*--------------footer---------------*/
+footer {
+    background-color: #4a4f22;
+    margin-top: 120px;
+}
+
+#footer_line {
+    border-bottom: 0.3px solid rgba(236, 231, 213, 0.5);
+    padding-bottom: 20px;
+}
+
+#footer_inner {
+    width: 1450px;
+    margin: 0 auto;
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#footer_inner ul,
+ol {
+    display: flex;
+}
+
+#footer_inner ul li {
+    color: #ece7d5;
+    padding: 0 20px;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+#footer_inner ol li {
+    padding-right: 5px;
+}
+
+#footer_inner2 {
+    position: relative;
+    width: 1450px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+}
+
+#footer_inner2 ul {
+    display: flex;
+}
+
+#footer_inner2>img {
+    padding: 0 20px;
+}
+
+#footer_inner2>p {
+    position: absolute;
+    top: 35%;
+    left: 210px;
+    color: #ece7d5;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+#footer_inner2 .soy {
+    position: absolute;
+    top: 37%;
+    right: 75px;
+}
