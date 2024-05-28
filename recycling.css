@@ -1,0 +1,398 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+img,
+video,
+iframe {
+    vertical-align: middle;
+
+}
+
+/*웹폰트
+ - 영문
+  .el-messiri
+  font-family: "El Messiri", sans-serif;
+  
+  -한글
+  .noto-sans
+  font-family: "Noto Sans KR", sans-serif;
+  */
+
+
+body {
+    min-width: 1450px;
+    font-family: "Noto Sans KR", sans-serif;
+    line-height: 24px;
+    font-size: 16px;
+    color: #000;
+    background: url(../images/bg.jpg);
+}
+
+
+
+
+/*----------top_banner--------------*/
+.top_banner {
+    height: 30px;
+    background-color: #4a4f22;
+    text-align: center;
+    color: #ede7d5;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+
+
+
+/*-----------side_btn--------------*/
+.btn {
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    width: 50px;
+}
+
+.btn img {
+    padding-bottom: 5px;
+}
+
+.top {
+    display: none;
+}
+
+
+
+/*----------header--------------*/
+header {
+    background-color: rgba(238, 232, 214, 0.5);
+    height: 70px;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    margin: 0 auto;
+    border-bottom: 0.3px solid rgba(74, 79, 34, 0.5);
+    z-index: 99;
+    width: 100%;
+}
+
+header.on {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#header_inner {
+    width: 1450px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#gnb {
+    display: flex;
+}
+
+#gnb>li {
+    font-family: "El Messiri", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 25px 40px;
+    color: #3a3a37;
+    position: relative;
+}
+
+
+.sub {
+    position: absolute;
+    top: 95%;
+    left: 0;
+    width: 100%;
+    display: none;
+}
+
+#gnb>li:nth-child(2)>.sub li {
+    background-color: rgba(238, 232, 214, 0.5);
+    color: #3a3a37;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.sub li {
+    background-color: rgba(238, 232, 214, 0.5);
+    color: #3a3a37;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 13px 0;
+    text-align: center;
+}
+
+.logo img {
+    width: 100px;
+}
+
+.icon_login {
+    display: flex;
+}
+
+.icon_login li {
+    padding: 0px 5px;
+}
+
+.icon_login img {
+    width: 25px;
+}
+
+
+
+/*-----------메인배너사진-------------*/
+#main_bg img {
+    width: 100%;
+}
+
+
+/*-----------지구를위한수거-------------*/
+#intro {
+    width: 100%;
+    margin: 0 auto;
+    padding: 100px 0;
+    text-align: center;
+}
+
+#intro>h3 {
+    font-family: "El Messiri", sans-serif;
+    font-size: 20px;
+    padding-bottom: 30px;
+}
+
+#intro>h1 {
+    font-size: 50px;
+    padding-bottom: 40px;
+}
+
+#intro>p {
+    font-weight: 500;
+    padding-bottom: 40px;
+}
+
+
+
+/*---------------일회용품----------------*/
+#plastic {
+    width: 100%;
+    margin: 0 auto;
+    height: 450px;
+    background: url(../images/plastic_bg.jpg) no-repeat center top fixed;
+    text-align: center;
+    color: #ffffff;
+}
+
+#plastic>h1 {
+    font-size: 50px;
+    padding: 120px 0 50px 0;
+}
+
+#plastic>p {
+    font-weight: 500;
+    padding-bottom: 50px;
+}
+
+.chart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 40px;
+    margin-left: 62px;
+}
+
+.chart_1,
+.chart_2 {
+    width: 248px;
+    font-size: 40px;
+    padding-right: 50px;
+}
+
+.chart_1 h6,
+.chart_2 h6 {
+    font-size: 15px;
+    padding-top: 30px;
+    padding-right: 50px;
+}
+
+.chart span {
+    padding-right: 50px;
+}
+
+
+
+/*-----------슬라이딩사진-------------*/
+#slide_photo {
+    width: 1450px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+#slide_photo p {
+    font-weight: 500;
+    font-size: 18px;
+    padding-top: 50px;
+    line-height: 30px;
+}
+
+
+
+
+/*-----------수거방법-------------*/
+#method {
+    width: 1450px;
+    margin: 0 auto;
+    padding-top: 130px;
+    text-align: center;
+}
+
+#method h3 {
+    font-size: 30px;
+}
+
+#method ul {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 70px;
+    padding-bottom: 60px;
+    border-bottom: 1px solid #727d47;
+}
+
+#method ul li h4 {
+    font-family: "El Messiri", sans-serif;
+    font-size: 28px;
+    padding-bottom: 10px;
+    padding-top: 30px;
+}
+
+#method ul li p:nth-child(3) {
+    font-weight: 700;
+    padding-bottom: 20px;
+    font-size: 18px;
+}
+
+.caution {
+    text-align: left;
+    padding: 40px 0 0 120px;
+}
+
+#method>h5 {
+    background-color: #727d47;
+    width: 300px;
+    padding: 7px;
+    border-radius: 15px;
+    margin: 50px 40%;
+    border: 1px solid #727d47;
+}
+
+#method>h5 a {
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+#method>h5:hover {
+    background-color: #727d4700;
+    border: 1px solid #727d47;
+    transition: all 0.5s;
+}
+
+#method>h5:hover a {
+    font-weight: 600;
+    color: #727d47;
+    transition: all 0.5s;
+}
+
+
+
+
+
+/*--------------footer---------------*/
+footer {
+    background-color: #4a4f22;
+    margin-top: 100px;
+}
+
+#footer_line {
+    border-bottom: 0.3px solid rgba(236, 231, 213, 0.5);
+    padding-bottom: 20px;
+}
+
+#footer_inner {
+    width: 1450px;
+    margin: 0 auto;
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#footer_inner ul,
+ol {
+    display: flex;
+}
+
+#footer_inner ul li {
+    color: #ece7d5;
+    padding: 0 20px;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+#footer_inner ol li {
+    padding-right: 5px;
+}
+
+#footer_inner2 {
+    position: relative;
+    width: 1450px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+}
+
+#footer_inner2 ul {
+    display: flex;
+}
+
+#footer_inner2>img {
+    padding: 0 20px;
+}
+
+#footer_inner2>p {
+    position: absolute;
+    top: 35%;
+    left: 210px;
+    color: #ece7d5;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+#footer_inner2 .soy {
+    position: absolute;
+    top: 37%;
+    right: 75px;
+}
