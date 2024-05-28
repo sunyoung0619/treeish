@@ -1278,7 +1278,7 @@
 
 
     <!-- Initialize Swiper -->
-    <script>
+    <script>/*베스트*/
         var swiper = new Swiper(".product_slide", {
             slidesPerView: 4,
             spaceBetween: 5,
@@ -1290,7 +1290,7 @@
         });
     </script>
 
-    <script>
+    <script>/*상단광고*/
         var swiper = new Swiper(".top_banner", {
             spaceBetween: 30,
             centeredSlides: true,
@@ -1310,14 +1310,15 @@
         });
     </script>
 
-    <script>
+
+    <script>/*하트버튼*/
         $(function () {
             $(".imgClass").click(function () {
-                $(".imgClass").toggleClass("on");
-                if ($(".imgClass").hasClass("on")) {
-                    $(".imgClass").attr("src", "images/product_icon_heart2.png");
+                $(this).toggleClass("on");
+                if ($(this).hasClass("on")) {
+                    $(this).attr("src", "images/product_icon_heart2.png");
                 } else {
-                    $(".imgClass").attr("src", "images/product_icon_heart.png");
+                    $(this).attr("src", "images/product_icon_heart.png");
                 }
             });
         });
